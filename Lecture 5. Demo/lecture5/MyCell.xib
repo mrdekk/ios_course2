@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="250" id="5uC-Gq-QfS" customClass="MyCell" customModule="lecture5" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5uC-Gq-QfS" id="t4e-2x-SMp">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="249"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="300" verticalHuggingPriority="500" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FvT-CE-cuD" userLabel="LLabel">
+                        <rect key="frame" x="8" y="8" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="900" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7Q-kQ-Sxn">
+                        <rect key="frame" x="8" y="41" width="359" height="200.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7q-TL-pLn" userLabel="RLabel">
+                        <rect key="frame" x="325" y="8" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="z7Q-kQ-Sxn" firstAttribute="top" secondItem="FvT-CE-cuD" secondAttribute="bottom" constant="12" id="2ej-gQ-RhW"/>
+                    <constraint firstItem="T7q-TL-pLn" firstAttribute="top" secondItem="t4e-2x-SMp" secondAttribute="topMargin" id="3Y9-H3-I8f"/>
+                    <constraint firstItem="FvT-CE-cuD" firstAttribute="top" secondItem="t4e-2x-SMp" secondAttribute="topMargin" id="4Kf-md-DKc"/>
+                    <constraint firstItem="T7q-TL-pLn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="FvT-CE-cuD" secondAttribute="trailing" constant="8" id="4dh-0I-H34"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="z7Q-kQ-Sxn" secondAttribute="bottom" id="8B1-8A-1js"/>
+                    <constraint firstItem="z7Q-kQ-Sxn" firstAttribute="leading" secondItem="t4e-2x-SMp" secondAttribute="leadingMargin" id="Bnn-SI-44x"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="z7Q-kQ-Sxn" secondAttribute="trailing" id="Fxk-MT-CWv"/>
+                    <constraint firstItem="FvT-CE-cuD" firstAttribute="leading" secondItem="t4e-2x-SMp" secondAttribute="leadingMargin" id="OPz-lX-Ypq"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="T7q-TL-pLn" secondAttribute="trailing" id="bgS-j7-Mhe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outletCollection property="labels" destination="FvT-CE-cuD" collectionClass="NSMutableArray" id="3yz-d9-1HX"/>
+                <outletCollection property="labels" destination="z7Q-kQ-Sxn" collectionClass="NSMutableArray" id="bad-ft-Sn2"/>
+                <outletCollection property="labels" destination="T7q-TL-pLn" collectionClass="NSMutableArray" id="h68-j9-ENH"/>
+            </connections>
+            <point key="canvasLocation" x="-155" y="-70"/>
+        </tableViewCell>
+    </objects>
+</document>
