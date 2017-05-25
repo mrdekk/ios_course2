@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16F73" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Car" representedClassName="CarEntity" syncable="YES">
+        <attribute name="mark" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="model" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="cars" inverseEntity="Person" syncable="YES"/>
+    </entity>
+    <entity name="Dog" representedClassName="DogEntity" syncable="YES">
+        <attribute name="color" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="high" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="dogs" inverseEntity="Person" syncable="YES"/>
+    </entity>
+    <entity name="Person" representedClassName="PersonEntity" syncable="YES">
+        <attribute name="birthDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="cars" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Car" inverseName="owner" inverseEntity="Car" syncable="YES"/>
+        <relationship name="dogs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Dog" inverseName="owner" inverseEntity="Dog" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Car" positionX="-63" positionY="-17" width="128" height="88"/>
+        <element name="Person" positionX="360" positionY="36" width="128" height="118"/>
+        <element name="Dog" positionX="-56" positionY="153" width="128" height="88"/>
+    </elements>
+</model>
