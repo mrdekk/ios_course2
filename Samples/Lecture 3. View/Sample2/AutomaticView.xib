@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Ezb-Ux-0XG" customClass="AutomaticView" customModule="Sample2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="438" height="84"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Would you like a cup of tea?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26V-nJ-jtG">
+                    <rect key="frame" x="0.0" y="0.0" width="438" height="64"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pW-e3-0Fn">
+                    <rect key="frame" x="6" y="64" width="30" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="vur-Il-iiv"/>
+                    </constraints>
+                    <state key="normal" title="YES">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didTap:" destination="Ezb-Ux-0XG" eventType="touchUpInside" id="wHr-PE-9kc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mvW-PB-dYL">
+                    <rect key="frame" x="402" y="64" width="30" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="Dhy-gT-JJC"/>
+                    </constraints>
+                    <state key="normal" title="NO">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="26V-nJ-jtG" firstAttribute="leading" secondItem="Ezb-Ux-0XG" secondAttribute="leading" id="0MB-Be-KIP"/>
+                <constraint firstItem="mvW-PB-dYL" firstAttribute="width" secondItem="2pW-e3-0Fn" secondAttribute="width" id="1Ij-up-esB"/>
+                <constraint firstAttribute="bottom" secondItem="mvW-PB-dYL" secondAttribute="bottom" id="8Ye-2r-B93"/>
+                <constraint firstItem="26V-nJ-jtG" firstAttribute="top" secondItem="Ezb-Ux-0XG" secondAttribute="top" id="CXV-Jc-NpX"/>
+                <constraint firstItem="2pW-e3-0Fn" firstAttribute="leading" secondItem="Ezb-Ux-0XG" secondAttribute="leading" constant="6" id="Fo6-Ve-5pY"/>
+                <constraint firstAttribute="trailing" secondItem="mvW-PB-dYL" secondAttribute="trailing" constant="6" id="Muz-va-Eci"/>
+                <constraint firstItem="mvW-PB-dYL" firstAttribute="top" secondItem="26V-nJ-jtG" secondAttribute="bottom" id="QD4-b5-9lf"/>
+                <constraint firstItem="2pW-e3-0Fn" firstAttribute="top" secondItem="26V-nJ-jtG" secondAttribute="bottom" id="gQA-Mu-u5Y"/>
+                <constraint firstAttribute="trailing" secondItem="26V-nJ-jtG" secondAttribute="trailing" id="k00-Xi-PE8"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="BPZ-hY-eR0"/>
+            <connections>
+                <outlet property="noButton" destination="mvW-PB-dYL" id="EnN-8C-pju"/>
+                <outlet property="titleLabel" destination="26V-nJ-jtG" id="lNK-R5-9Sr"/>
+            </connections>
+            <point key="canvasLocation" x="68" y="-74"/>
+        </view>
+    </objects>
+</document>
