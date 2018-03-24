@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCell" rowHeight="150" id="4y9-nX-hd2" customClass="CustomCell" customModule="Sample4" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="197"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4y9-nX-hd2" id="9Vx-1K-xuw">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="196.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RfY-bu-F6b">
+                        <rect key="frame" x="16" y="11" width="343" height="175"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="175" id="bpR-XB-4DA"/>
+                        </constraints>
+                        <state key="normal" title="Push Me!"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="RfY-bu-F6b" secondAttribute="trailing" id="5i3-zw-eHn"/>
+                    <constraint firstItem="RfY-bu-F6b" firstAttribute="leading" secondItem="9Vx-1K-xuw" secondAttribute="leadingMargin" id="Cpb-bN-TMu"/>
+                    <constraint firstItem="RfY-bu-F6b" firstAttribute="top" secondItem="9Vx-1K-xuw" secondAttribute="topMargin" id="cBw-XG-VhU"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="RfY-bu-F6b" secondAttribute="bottom" id="jXH-35-GpY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="pushMeButton" destination="RfY-bu-F6b" id="oVp-GA-QMc"/>
+            </connections>
+            <point key="canvasLocation" x="16.5" y="71.5"/>
+        </tableViewCell>
+    </objects>
+</document>
