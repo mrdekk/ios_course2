@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "start": "nodemon"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "express-basic-auth": "^1.0.2",
+    "morgan": "^1.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "private": true
+}
